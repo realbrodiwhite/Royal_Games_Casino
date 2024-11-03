@@ -192,12 +192,35 @@ For support, email [support@email.com] or join our Slack channel.
 
 ## 🎯 Roadmap
 
-- [ ] Additional slot games
-- [ ] User accounts with authentication
-- [ ] Multiplayer tournaments
-- [ ] Achievement system
-- [ ] Mobile responsive design
-- [ ] Progressive jackpots
+User Accounts
+[ ] User accounts with authentication
+[ ] Advanced User Account Profile (Reset Password, Change Email, Change Password, Edit Profile)
+[ ] User Profiles
+[ ] Authentication and Security (password resets, two-factor authentication)
+[ ] Personalization (store preferences, game history, wallet information)
+Social Features
+[ ] Add social features (leaderboards, chat)
+[ ] Friends Lists (Social Interaction, Shared Experiences, Leaderboards)
+[ ] Chat Functions (real-time communication)
+[ ] Sharing Wins (social media integration)
+Games and Features
+[ ] Create additional slot games
+[ ] Implement progressive jackpots
+[ ] Implement Scatter Wins
+[ ] Create Pickpocketing Feature
+[ ] Create Powerups (RTP Boosts, Pickpocketing Shields, XP Boosts)
+[ ] Implement Progressive Achievement system
+[ ] Implement a “skill” based progressive level up system
+[ ] Implement a “rewards” system (rewards players CRDS for completing tasks)
+[ ] Weekly Multiplayer tournaments (Buy-Ins, Cash Prizes in CRDS)
+[ ] Mobile responsive design
+Blockchain Integration
+[ ] Implement Ethereum Blockchain integration for Royal Games Casino’s own ERC20 Token called CRDS
+In-App Store
+[ ] Create In-App Store for Micro Payments
+Incentives for Social Interaction
+[ ] Referral Programs (reward users with CRDS tokens for successful referrals)
+[ ] Social Challenges (teamwork or competition among friends, rewards with tokens or in-game items)
 
 ## ✨ Acknowledgments
 
