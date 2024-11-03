@@ -192,6 +192,10 @@ For support, email [support@email.com] or join our Slack channel.
 
 ## 🎯 Roadmap
 
+Data
+[ ] Switch to Postgres SQL via dotenv
+[ ] Build out datas structure so its as robust as possible for current and upcoming features
+
 User Accounts
 [ ] User accounts with authentication
 [ ] Advanced User Account Profile (Reset Password, Change Email, Change Password, Edit Profile)
