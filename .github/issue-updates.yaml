@@ -1,0 +1,25 @@
+name: Update Issue Status
+
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled]
+
+jobs:
+  update-status:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update issue status
+      run: |
+        if [[ "${{ github.event.action }}" == "labeled" ]]; then
+          if [[ "${{ github.event.label.name }}" == "In Progress" ]]; then
+            gh issue edit ${{ github.event.issue.number }} --add-label "In Progress"
+          elif [[ "${{ github.event.label.name }}" == "Done" ]]; then
+            gh issue edit ${{ github.event.issue.number }} --add-label "Done"
+          fi
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
