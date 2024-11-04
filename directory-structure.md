@@ -1,24 +1,55 @@
-# Directory Structure and Purpose
-src/
-├── components/          # React components
-│   ├── game/           # Game-specific components
-│   ├── slot/           # Slot game mechanics
-│   └── ui/             # Reusable UI components
-├── hooks/              # Custom React hooks
-├── utils/              # Utility functions
-├── types/              # TypeScript type definitions
-├── store/              # State management
-├── services/           # API and external services
-├── context/            # React contexts
-├── config/             # Configuration files
-└── styles/             # Global styles and themes
+# Directory Structure
 
+royalgames-main/
+|
+├── src
+│   ├── assets/                # React contexts
+│   │   ├── images/         # Image files
+│   │   ├── fonts/          # Font files
+│   │   └── sounds/         # Audio files
+│   │
+│   ├── context/               # React contexts
+│   │
+│   ├── components/            # Feature components
+│   │   ├── game/              # Game components
+│   │   ├── game-list/         # Game selection
+│   │   ├── header/            # App header
+│   │   ├── header/            # App header
 
+│   │   └── slot/              # Slot game logic
+│   │
+│   ├── config/
+│   │
+│   ├── context/               # Static assets
+│   │
+│   ├── data/                  # React contexts
+│   │
+│   ├── hooks/                 # React contexts
+│   │
+│   ├── services/
+│   │
+│   ├── store/                 # Static assets
+│   │
+│   ├── styles/                # React contexts
+│   │
+│   ├── types/                 # React contexts
+│   │
+│   └── utils/                 # Redux store
+│
+└── server/                    # Backend source code
+    ├── games-data/            # Game configurations
+    ├── public/                # Static files
+    │   └── assets/            # Static assets
+    │      ├── images/         # Image files
+    │      ├── fonts/          # Font files
+    │      └── sounds/         # Audio files
+    │
+    └── data/                  # Game assets
 
-
-## Examples for each directory:
+## Examples for each directory
 
 ### 1. hooks/
+
 ```typescript
 // src/hooks/useSocket.ts
 import { useContext } from 'react';
@@ -30,6 +61,7 @@ export const useSocket = () => {
 ```
 
 ### 2. utils/
+
 ```typescript
 // src/utils/assetLoader.ts
 import { Assets } from 'pixi.js';
@@ -41,6 +73,7 @@ export const loadGameAssets = async (gameId: string): Promise<GameAssets> => {
 ```
 
 ### 3. types/
+
 ```typescript
 // src/types/game.ts
 export interface GameConfig {
@@ -51,6 +84,7 @@ export interface GameConfig {
 ```
 
 ### 4. store/
+
 ```typescript
 // src/store/gameStore.ts
 import { create } from 'zustand';
@@ -62,6 +96,7 @@ export const useGameStore = create<GameState>((set) => ({
 ```
 
 ### 5. services/
+
 ```typescript
 // src/services/GameService.ts
 import { GameConfig } from '@types/game';
@@ -75,6 +110,7 @@ export class GameService {
 ```
 
 ### 6. context/
+
 ```typescript
 // src/context/socket.ts
 import { createContext } from 'react';
@@ -86,6 +122,7 @@ export const SocketContext = createContext(socket);
 ```
 
 ### 7. config/
+
 ```typescript
 // src/config/games.ts
 import type { GameConfig } from '@types/game';
@@ -96,6 +133,7 @@ export const gameConfigs: Record<string, GameConfig> = {
 ```
 
 ### 8. styles/
+
 ```typescript
 // src/styles/game.css
 @tailwind base;
