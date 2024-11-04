@@ -192,11 +192,43 @@ For support, email [support@email.com] or join our Slack channel.
 
 ## 🎯 Roadmap
 
-Data
-[ ] Switch to Postgres SQL via dotenv
-[ ] Build out datas structure so its as robust as possible for current and upcoming features
+[ ] Move all directories listed below from the root and into the app directory
+- app
+- assets
+- components
+- config
+- context
+- data
+- hooks
+- new
+- services
+- store
+- styles
+- types
+- utils
 
-User Accounts
+[ ] Use comments in all app files and folders below in an explanatory and thorough manner recursively one folder at a time and recursively throughout the app files and directories below taking care to skip node_modules
+    [ ] app
+    [ ] assets
+    [ ] components
+    [ ] config
+    [ ] context
+    [ ] data
+    [ ] hooks
+    [ ] new
+    [ ] services
+    [ ] store
+    [ ] styles
+    [ ] types
+    [ ] utils
+    [ ] index.js
+    [ ] server.rs
+
+[ ] Implement robust data and data relationship structures based on needs in the roadmap
+[ ] Switch to Postgres SQL via dotenv
+[ ] Complete conversion to Next15
+[ ] Finish conversion to Typescript project wide
+[ ] Build out datas structure so its as robust as possible for current and upcoming features
 [ ] User accounts with authentication
 [ ] Advanced User Account Profile (Reset Password, Change Email, Change Password, Edit Profile)
 [ ] User Profiles
