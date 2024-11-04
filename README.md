@@ -38,6 +38,9 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 - **Socket.IO** client for real-time communication
 - **Redux** for state management
 - **SCSS** for styling
+- **Tailwind** for styling
+- **Next 15** for various
+- **Shadcn-ui** for UI Components
 
 ### Backend (`/server`)
 
@@ -59,6 +62,8 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 ## 🛠️ Project Structure
 
 royalgames-main/
+├── app
+│
 ├── src
 │   ├── assets/                # React contexts
 │   │   ├── images/         # Image files
