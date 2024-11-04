@@ -13,11 +13,7 @@ src/
 ├── config/             # Configuration files
 └── styles/             # Global styles and themes
 
-public/
-└── assets/            # Static assets
-    ├── images/        # Image files
-    ├── fonts/         # Font files
-    └── sounds/        # Audio files
+
 
 
 ## Examples for each directory:

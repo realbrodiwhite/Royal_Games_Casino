@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import RoyalGamesGlobalStylesheet from "../components/royal-games-global-stylesheet";
+import RoyalGamesGlobalStylesheet from "../../styles/royal-games-global-stylesheet";
 import * as Recharts from "recharts";
 import * as ShadcnUI from "@/design-libraries/shadcn-ui";
 

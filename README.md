@@ -31,6 +31,7 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 ## 🏗️ Technical Architecture
 
 ### Frontend (`/src`)
+
 - **React** application with modular component structure
 - **PIXI.js** for high-performance game rendering
 - **GSAP** for smooth animations
@@ -39,6 +40,7 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 - **SCSS** for styling
 
 ### Backend (`/server`)
+
 - **Node.js** + **Express** server
 - **Socket.IO** for WebSocket communication
 - **SQLite3** database for data persistence
@@ -46,6 +48,7 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 - Session management and user tracking
 
 ### Game Engine
+
 - Custom slot game engine with:
   - Configurable reels and symbols
   - Dynamic payline evaluation
@@ -55,32 +58,60 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 
 ## 🛠️ Project Structure
 
-```
 royalgames-main/
-├── src/                      # Frontend source code
-│   ├── features/            # Feature components
-│   │   ├── game/           # Game components
-│   │   ├── game-list/      # Game selection
-│   │   ├── header/         # App header
-│   │   └── slot/           # Slot game logic
-│   ├── context/            # React contexts
-│   ├── assets/             # Static assets
-│   └── store/              # Redux store
-├── server/                  # Backend source code
-│   ├── games-data/         # Game configurations
-│   ├── public/             # Static files
-│   └── data/               # Game assets
-```
+├── src
+│   ├── assets/                # React contexts
+│   │   ├── images/         # Image files
+│   │   ├── fonts/          # Font files
+│   │   └── sounds/         # Audio files
+│   │
+│   ├── context/               # React contexts
+│   │
+│   ├── components/            # Feature components
+│   │   ├── game/              # Game components
+│   │   ├── game-list/         # Game selection
+│   │   ├── header/            # App header
+│   │   └── slot/              # Slot game logic
+│   │
+│   ├── config/
+│   │
+│   ├── context/               # Static assets
+│   │
+│   ├── data/                  # React contexts
+│   │
+│   ├── hooks/                 # React contexts
+│   │
+│   ├── services/
+│   │
+│   ├── store/                 # Static assets
+│   │
+│   ├── styles/                # React contexts
+│   │
+│   ├── types/                 # React contexts
+│   │
+│   └── utils/                 # Redux store
+│
+└── server/                    # Backend source code
+    ├── games-data/            # Game configurations
+    ├── public/                # Static files
+    │   └── assets/            # Static assets
+    │      ├── images/         # Image files
+    │      ├── fonts/          # Font files
+    │      └── sounds/         # Audio files
+    │
+    └── data/                  # Game assets
 
 ## 🔧 Setup & Installation
 
 1. **Prerequisites**
+
    ```bash
    node.js >= 16.x
    npm >= 8.x
    ```
 
 2. **Install Dependencies**
+
    ```bash
    # Install frontend dependencies
    npm install
@@ -91,12 +122,14 @@ royalgames-main/
    ```
 
 3. **Database Setup**
+
    ```bash
    # The SQLite database will be automatically initialized
    # on first run with required tables
    ```
 
 4. **Running the Application**
+
    ```bash
    # Start the backend server
    cd server
@@ -109,12 +142,14 @@ royalgames-main/
 ## 🎲 Game Configuration
 
 ### Adding New Games
+
 1. Create game configuration in `/server/games-data/`
 2. Add game assets in `/server/public/data/`
 3. Configure paylines and multipliers
 4. Add game entry in frontend game list
 
 ### Configuring Existing Games
+
 - Edit payline configurations in game data files
 - Modify symbol multipliers and win patterns
 - Adjust betting ranges and coin values
@@ -124,12 +159,14 @@ royalgames-main/
 ### Socket.IO Events
 
 #### Client -> Server
+
 - `login`: User authentication
 - `balance`: Request balance update
 - `gamestate`: Request game state
 - `bet`: Place a bet
 
 #### Server -> Client
+
 - `login`: Authentication response
 - `balance`: Balance update
 - `gamestate`: Game state update
@@ -138,6 +175,7 @@ royalgames-main/
 ### Database Schema
 
 #### Accounts Table
+
 ```sql
 CREATE TABLE accounts (
   id INTEGER PRIMARY KEY,
@@ -149,6 +187,7 @@ CREATE TABLE accounts (
 ```
 
 #### Gamestates Table
+
 ```sql
 CREATE TABLE gamestates (
   id INTEGER PRIMARY KEY,
@@ -193,6 +232,7 @@ For support, email [support@email.com] or join our Slack channel.
 ## 🎯 Roadmap
 
 [ ] Move all directories listed below from the root and into the app directory
+
 - app
 - assets
 - components
@@ -228,18 +268,21 @@ For support, email [support@email.com] or join our Slack channel.
 [ ] Switch to Postgres SQL via dotenv
 [ ] Complete conversion to Next15
 [ ] Finish conversion to Typescript project wide
-[ ] Build out datas structure so its as robust as possible for current and upcoming features
+[ ] Build out data structure so it’s as robust as possible for current and upcoming features
 [ ] User accounts with authentication
 [ ] Advanced User Account Profile (Reset Password, Change Email, Change Password, Edit Profile)
-[ ] User Profiles
 [ ] Authentication and Security (password resets, two-factor authentication)
 [ ] Personalization (store preferences, game history, wallet information)
-Social Features
+[ ] User Profiles
+[ ] View User Profiles
+[ ] Edit User Profiles
+[ ] Search for Users and User Profiles
+[ ] 3D Avatar Feature (similar to Facebook)
+[ ] User Profile Theming (similar to MySpace)
 [ ] Add social features (leaderboards, chat)
 [ ] Friends Lists (Social Interaction, Shared Experiences, Leaderboards)
 [ ] Chat Functions (real-time communication)
 [ ] Sharing Wins (social media integration)
-Games and Features
 [ ] Create additional slot games
 [ ] Implement progressive jackpots
 [ ] Implement Scatter Wins
@@ -250,13 +293,11 @@ Games and Features
 [ ] Implement a “rewards” system (rewards players CRDS for completing tasks)
 [ ] Weekly Multiplayer tournaments (Buy-Ins, Cash Prizes in CRDS)
 [ ] Mobile responsive design
-Blockchain Integration
 [ ] Implement Ethereum Blockchain integration for Royal Games Casino’s own ERC20 Token called CRDS
-In-App Store
 [ ] Create In-App Store for Micro Payments
-Incentives for Social Interaction
 [ ] Referral Programs (reward users with CRDS tokens for successful referrals)
 [ ] Social Challenges (teamwork or competition among friends, rewards with tokens or in-game items)
+[ ] Implement new game types (drawings, coin tosses, card games, roulette, bingo, and more)
 
 ## ✨ Acknowledgments
 

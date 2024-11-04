@@ -2,8 +2,8 @@
 import React from "react";
 import RoyalGamesGlobalStylesheet from "../components/royal-games-global-stylesheet";
 import GameTypesLink from "../components/game-types-link";
-import RoyalGamesLeaderboardLink from "../components/royal-games-leaderboard-link";
-import CrdsExchangeLink from "../components/crds-exchange-link";
+import RoyalGamesLeaderboardLink from "../leaderboard/royal-games-leaderboard-link";
+import CrdsExchangeLink from "../links/crds-exchange-link";
 
 function RoyalGamesResponsiveHeader() {
   const [isSearchVisible, setIsSearchVisible] = React.useState(false);
