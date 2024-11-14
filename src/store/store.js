@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import lobbySlice from "./lobbySlice";
+import lobbySlice from "../../app/lobbySlice";
 
 const store = configureStore({
   reducer: {
