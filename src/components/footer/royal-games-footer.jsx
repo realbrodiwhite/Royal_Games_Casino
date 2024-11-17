@@ -2,7 +2,7 @@
 import React from "react";
 import RoyalGamesGlobalStylesheet from "../components/royal-games-global-stylesheet";
 
-function RoyalGamesFooter() {
+const RoyalGamesFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-[#293044] text-white py-1 w-full h-[5vh] fixed bottom-0 flex flex-col justify-center">
@@ -18,9 +18,6 @@ function RoyalGamesFooter() {
       />
     </footer>
   );
-}
-function RoyalGamesFooterStory() {
-  return <RoyalGamesFooter />;
 }
 
 export default RoyalGamesFooter;
