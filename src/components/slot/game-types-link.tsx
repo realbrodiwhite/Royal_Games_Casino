@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 
-function GameTypesLink({ href }) {
+interface GameTypesLinkProps {
+  href: string;
+}
+
+const GameTypesLink: React.FC<GameTypesLinkProps> = ({ href }) => {
   return (
     <a
       href={href}
@@ -9,14 +13,6 @@ function GameTypesLink({ href }) {
     >
       Games
     </a>
-  );
-}
-
-function GameTypesLinkStory() {
-  return (
-    <div className="w-full">
-      <GameTypesLink href="/games" />
-    </div>
   );
 }
 
