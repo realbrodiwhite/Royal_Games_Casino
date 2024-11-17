@@ -8,6 +8,7 @@ import md5 from 'md5';
 import { v1 as uuidv1, v4 as uuidv4 } from 'uuid';
 import { rockClimberData } from './src/data/games/rock-climber/';
 import { egyptianTreasuresData } from './src/data/games/egyptian-treasures/contr';
+import rateLimit from 'express-rate-limit';
 
 // Interfaces
 interface User {
@@ -85,6 +86,12 @@ class GameServer {
       },
     });
 
+    const limiter = rateLimit({
+      windowMs: 15 * 60 * 1000, // 15 minutes
+      max: 100, // max 100 requests per windowMs
+    });
+
+    this.app.use(limiter);
     this.app.use(express.static(__dirname + '/public'));
     this.app.get('/', (req: Request, res: Response) => {
       res.sendFile(__dirname + '/public/index.html');
