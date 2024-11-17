@@ -1,6 +1,6 @@
-const key = localStorage.getItem('key');
+const key: string | null = localStorage.getItem('key');
 
-const symbolsCount = 12;
+const symbolsCount: number = 12;
 
 const game = new Game({
   id: 'egyptian-treasures',
@@ -17,7 +17,7 @@ const game = new Game({
   spinTimeBetweenReels: 135,
 }, socket);
 
-const assetsUrl = `/data/${gameId}/`;
+const assetsUrl: string = `/data/${gameId}/`;
 game.addResource([
   {
     name: 'controls-spritesheet',
