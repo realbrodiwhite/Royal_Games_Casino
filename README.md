@@ -5,9 +5,9 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 ## 🎮 Features
 
 - **Multiple Slot Games**
-  - Egyptian Treasures: Ancient Egypt themed slot with 20 paylines
-  - Rock Climber: Adventure themed slot with 9 paylines
-  - Each game features unique symbols, animations, and win patterns
+  - Egyptian Treasures: Ancient Egypt themed slot with 20/100 paylines
+  - Rock Climber: Adventure themed slot with 9 paylines 9/100
+  - Each game features unique symbols, animations, and win patterns (Incomplete implementations)
 
 - **Real-time Gameplay**
   - WebSocket-based real-time communication
@@ -46,9 +46,9 @@ A modern social casino platform built with React and Node.js, featuring real-tim
 
 - **Node.js** + **Express** server
 - **Socket.IO** for WebSocket communication
-- **SQLite3** database for data persistence
-- Game logic processing and validation
-- Session management and user tracking
+- **SQLite3** database for data persistence (PostgreSQL implementation to replace)
+- **Custom Implementation** Game logic processing and validation
+- **Redux** Session management and user tracking
 
 ### Game Engine
 

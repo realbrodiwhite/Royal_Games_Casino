@@ -8,7 +8,7 @@ const Server = require('./server');
 const rockClimberData = require('./games-data/rock-climber');
 const egyptianTreasuresData = require('./games-data/egyptian-treasures');
 
-let db = new sqlite3.Database('./database.db', (err) => {
+let db = new sqlite3.Database('./database.db', (err: { message: any; }) => {
   if (err) {
     console.error(err.message);
   } else {
@@ -25,7 +25,7 @@ process.on('exit', function() {
   db.close();
 });
 
-function initIo(io) {
+function initIo(io: { on: (arg0: string, arg1: (socket: any) => void) => void; }) {
   io.on('connection', (socket) => {
     socket.on('login', async (data) => {
       if (data.key === null) {
